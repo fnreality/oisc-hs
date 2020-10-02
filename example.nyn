@@ -1,0 +1,37 @@
+given a
+def jump as
+do % ? ? a
+end jump
+
+given
+def zero as
+do % ? ? *
+end zero with ?
+
+given a b
+def add as
+do z = zero
+do % z b *
+do % a z *
+end add
+
+given
+def one
+do % ?? ? reversed
+when reversed
+do % ? ?? recurse
+do ? = ??
+end when
+end one with ?
+
+given a
+def inc as
+so o = one
+do add a o
+end inc
+
+given a
+def dec as
+do o = one
+do % a o *
+end dec
